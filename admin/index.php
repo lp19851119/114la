@@ -15,8 +15,8 @@ if (substr($http_host, -1) != '/') $http_host .= '/';
 if (substr($dt_root, -1) != '/') $dt_root .= '/';
 if (substr($sst_filename, -1) != '/') $sst_filename .= '/';
 
-$siteUrl = str_replace(array($dt_root), array('http://' . $http_host), $sst_filename);
-$siteBackendUrl = str_replace(array($dt_root, '/index.php'), array('http://' . $http_host, '/'), $st_filename);
+$siteUrl = str_replace(array($dt_root), array('https://' . $http_host), $sst_filename);
+$siteBackendUrl = str_replace(array($dt_root, '/index.php'), array('https://' . $http_host, '/'), $st_filename);
 
 defined('SITE_URL') or define('SITE_URL', $siteUrl); //http://xxxi.com/
 //网站管理后台的url
